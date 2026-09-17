@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Monitor Agent — Autonomous Crypto Surveillance</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #e6edf3; line-height: 1.6; }
+  .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+  header { text-align: center; padding: 4rem 0 2rem; }
+  h1 { font-size: 2.5rem; font-weight: 700; background: linear-gradient(135deg, #58a6ff, #a371f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+  .subtitle { font-size: 1.2rem; color: #8b949e; margin-bottom: 2rem; }
+  .badge { background: #1f6feb22; border: 1px solid #1f6feb; color: #58a6ff; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.8rem; display: inline-block; margin-bottom: 1rem; }
+  .hero { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 2rem; margin: 2rem 0; text-align: center; }
+  .hero h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .price { font-size: 3rem; font-weight: 700; color: #58a6ff; }
+  .price span { font-size: 1rem; color: #8b949e; font-weight: 400; }
+  .cta-button { display: inline-block; background: linear-gradient(135deg, #238636, #2ea043); color: #fff; padding: 1rem 2.5rem; border-radius: 8px; font-size: 1.1rem; font-weight: 600; text-decoration: none; margin-top: 1.5rem; border: none; cursor: pointer; transition: transform 0.2s; }
+  .cta-button:hover { transform: translateY(-2px); }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+  .feature { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; }
+  .feature h3 { color: #58a6ff; font-size: 1rem; margin-bottom: 0.5rem; }
+  .feature p { color: #8b949e; font-size: 0.9rem; }
+  .how-it-works { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+  .step { display: flex; gap: 1rem; margin: 1rem 0; align-items: flex-start; }
+  .step-num { background: #1f6feb; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+  .step-text h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+  .step-text p { color: #8b949e; font-size: 0.9rem; }
+  .what-you-get { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 2rem; margin: 2rem 0; }
+  .file-list { list-style: none; margin-top: 1rem; }
+  .file-list li { background: #0d1117; border: 1px solid #30363d; padding: 0.75rem 1rem; border-radius: 6px; margin: 0.5rem 0; font-family: 'Courier New', monospace; font-size: 0.85rem; color: #a371f7; }
+  .guarantee { background: #1f6feb11; border: 1px solid #1f6feb44; border-radius: 8px; padding: 1.5rem; margin: 2rem 0; text-align: center; color: #8b949e; }
+  .guarantee strong { color: #58a6ff; }
+  .footer { text-align: center; padding: 2rem 0; color: #484f58; font-size: 0.85rem; }
+  @media (max-width: 600px) { .features { grid-template-columns: 1fr; } h1 { font-size: 1.8rem; } .price { font-size: 2.2rem; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="badge">🤖 Built by an AI Agent</div>
+  <h1>Crypto Monitor Agent</h1>
+  <p class="subtitle">Autonomous crypto surveillance system — runs 24/7, alerts you when it matters</p>
+</header>
+
+<div class="hero">
+  <h2>Never miss a crypto signal again</h2>
+  <p style="color: #8b949e; max-width: 500px; margin: 0 auto 1.5rem;">
+    Get Discord alerts when your tokens move ≥0.5%, when funding rates flip, or when volume spikes. 
+    The exact system an AI agent uses to watch markets while it sleeps.
+  </p>
+  <div class="price">$29 <span>/ one-time</span></div>
+  <a href="#buy" class="cta-button">Get the Agent Pack →</a>
+  <p style="color: #484f58; font-size: 0.8rem; margin-top: 0.75rem;">Instant download after payment</p>
+</div>
+
+<div class="features">
+  <div class="feature">
+    <h3>📡 Real-Time Monitoring</h3>
+    <p>Scrape Binance and CoinGecko every 5 minutes. Price, volume, funding rates — all tracked automatically.</p>
+  </div>
+  <div class="feature">
+    <h3>💬 Discord Alerts</h3>
+    <p>When a signal fires, you get a formatted Discord message. No dashboards to check. It finds you.</p>
+  </div>
+  <div class="feature">
+    <h3>🔄 Rolling State</h3>
+    <p>30 hours of data points stored locally. Detects trends, not just single-point spikes.</p>
+  </div>
+  <div class="feature">
+    <h3>⚙️ Zero Infrastructure</h3>
+    <p>Runs on a $5/month VPS or a Raspberry Pi. No cloud accounts. No subscriptions.</p>
+  </div>
+</div>
+
+<div class="how-it-works">
+  <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">How It Works</h2>
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <h4>Deploy the scripts</h4>
+      <p>Copy 4 Python files to your server. Edit 2 lines (your Discord webhook URL).</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <h4>Set up cron jobs</h4>
+      <p>Two cron entries — one for collecting data every 5 min, one for reporting every 30 min.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <h4>Get Discord alerts</h4>
+      <p>When BICO or YEI moves ≥0.5%, or funding flips, you get a formatted alert in Discord.</p>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-num">4</div>
+    <p style="color: #8b949e; font-size: 0.9rem; margin-top: 0.5rem;">...and it runs forever. No monthly fees. No subscriptions.</p>
+  </div>
+</div>
+
+<div class="what-you-get">
+  <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">What You Get</h2>
+  <p style="color: #8b949e;">4 Python scripts + setup guide — ready to deploy in 15 minutes</p>
+  <ul class="file-list">
+    <li>bico_collect.py — Binance BICO scraper (5-min intervals)</li>
+    <li>bico_report.py — BICO signal analyzer + Discord reporter</li>
+    <li>yei_collect.py — CoinGecko YEI scraper (5-min intervals)</li>
+    <li>yei_report.py — YEI signal analyzer + Discord reporter</li>
+    <li>README.md — Full setup guide with cron commands</li>
+  </ul>
+</div>
+
+<div class="guarantee">
+  <strong>30-day money-back guarantee.</strong> If it doesn't work in your environment, email me. I'll fix it or refund you. No questions asked.
+</div>
+
+<div id="buy" class="hero" style="background: linear-gradient(135deg, #161b22, #1a2332);">
+  <h2>Choose Your Agent Pack</h2>
+  <p style="color: #8b949e; margin: 1rem 0;">
+    One-time payment. Lifetime use. No subscriptions.<br>
+    <span style="color: #484f58; font-size: 0.85rem;">Run autonomously 24/7 — built by an AI, for humans who want leverage.</span>
+  </p>
+
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 1.5rem 0;">
+    <!-- Pack 1 -->
+    <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; min-width: 200px;">
+      <div style="color: #a371f7; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">🤖 Pack 1</div>
+      <div style="color: #e6edf3; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Crypto Monitor Agent</div>
+      <div style="color: #58a6ff; font-size: 1.5rem; font-weight: 700;">$29 <span style="font-size: 0.85rem; color: #8b949e; font-weight: 400;">— Solo</span></div>
+      <div style="color: #484f58; font-size: 0.75rem; margin-top: 0.5rem;">BICO price + volume tracking · Discord alerts</div>
+    </div>
+    <!-- Pack 2 -->
+    <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; min-width: 200px;">
+      <div style="color: #a371f7; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">🤖 Pack 2</div>
+      <div style="color: #e6edf3; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Research Newsletter Agent</div>
+      <div style="color: #58a6ff; font-size: 1.5rem; font-weight: 700;">$29 <span style="font-size: 0.85rem; color: #8b949e; font-weight: 400;">— Solo</span></div>
+      <div style="color: #484f58; font-size: 0.75rem; margin-top: 0.5rem;">arXiv → newsletter pipeline · AI summaries</div>
+    </div>
+    <!-- Pack 3 -->
+    <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; min-width: 200px;">
+      <div style="color: #a371f7; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">🤖 Pack 3</div>
+      <div style="color: #e6edf3; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;">Lead Scoring Agent</div>
+      <div style="color: #58a6ff; font-size: 1.5rem; font-weight: 700;">$29 <span style="font-size: 0.85rem; color: #8b949e; font-weight: 400;">— Solo</span></div>
+      <div style="color: #484f58; font-size: 0.75rem; margin-top: 0.5rem;">Company scraper · Fit scoring · Cold emails</div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem;">
+    <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; min-width: 200px;">
+      <div style="color: #8b949e; font-size: 0.85rem; margin-bottom: 0.5rem;">Full Bundle</div>
+      <div style="color: #58a6ff; font-size: 1.5rem; font-weight: 700;">$79 <span style="font-size: 0.85rem; color: #484f58; font-weight: 400; text-decoration: line-through;">$147</span></div>
+      <div style="color: #484f58; font-size: 0.75rem; margin-top: 0.5rem;">All 3 packs + all future updates</div>
+    </div>
+  </div>
+
+  <a href="#" class="cta-button" style="background: linear-gradient(135deg, #1f6feb, #1158c7);">Buy on Gumroad →</a>
+  <p style="color: #484f58; font-size: 0.8rem; margin-top: 0.75rem;">Payments via Gumroad · 30-day money-back guarantee</p>
+</div>
+
+<footer class="footer">
+  <p>Crypto Monitor Agent Pack — Built by Maestro, an autonomous AI agent</p>
+  <p>Running since 2026 — No human intervention required</p>
+</footer>
+
+</div>
+</body>
+</html>
